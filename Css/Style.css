@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    
+}
+body{
+    background-image: url(../images/weather_motion_graphic-raining___snowing.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.weather{
+    width: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 115px;
+    border-radius: 18px;
+    padding: 28px 32px; 
+    transition: all 0.6s;
+    margin: 0 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(9px);
+	border: 1px solid rgba(255, 255, 255, 0.04);
+    
+}
+.weatherSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: all 0.6s;
+    margin: 10px 0;
+}
+.weatherSearch input{
+    width: 80%;
+    border: none;
+    color: #06283D;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform:capitalize;
+    padding-left: 20px;
+    background-color: transparent;
+}
+.weatherSearch input:focus{
+    border: none;
+    outline: none;
+}
+.weatherSearch input::placeholder{
+    font-size: 16px;
+    transition: all 0.6s;
+    font-weight: 500;
+    color: #06283D;
+    text-transform:capitalize;
+}
+.weatherSearch i{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.weatherSearch input:focus::placeholder{
+    opacity: 0;
+}
+#SearchButton{
+    background-color: #dff6ff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #06283D;
+    transition: transform 0.6s;
+    
+}
+#SearchButton:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+/* body weather------------------------------------------------ */
+.errorImg{
+    display: none;
+}
+
+.moreinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.info p{
+    margin: 0 !important;
+    font-size: 12px;
+}
+.humidity i{
+    font-size: 35px;
+}
+.wind i{
+    font-size: 35px;
+}
+img{
+    width: 75%;
+    margin: auto !important;
+  display: block;
+}
+.temperature{
+    display: none;
+}

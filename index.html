@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather shadow-lg" id="weather">
+        <div class="weatherSearch">
+            <i class="fa-solid fa-location-dot fa-beat"></i>
+            <input type="text" placeholder="Enter Your location" id="inputSearch">
+           <i class="fa-solid fa-magnifying-glass" id="SearchButton"></i>
+        </div>
+        <div class="errorImg text-center">
+            <img src="images/error.gif" class="rounded-5"  alt="">
+            <p>Please Enter a Valid Location</p>
+        </div>
+        <div class="temperature">
+            <img src="images/clear.png"  alt="">
+            <div class="tempInfo my-4 text-center">
+                <h1 class="fw-bolder tempNumber">1</h1>
+                <p class="tempdesc">snow</p>
+            </div>
+            <div class="moreinfo">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="info">
+                        <p class="fs-5 fw-bold humidityNumber">99%</p>
+                        <p class="fw-bold">humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="info">
+                        <p class="fs-5 fw-bold windSpeed">4km/h</p>
+                        <p class="fw-bold">wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+          
+               
+         
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
