@@ -66,7 +66,7 @@ body{
 .weatherSearch input:focus::placeholder{
     opacity: 0;
 }
-#SearchButton{
+.SearchButton{
     background-color: #dff6ff;
     padding: 10px;
     border-radius: 50%;
@@ -75,10 +75,13 @@ body{
     transition: transform 0.6s;
     
 }
-#SearchButton:hover{
+.SearchButton:hover{
     transform: scale(1.1);
     background-color: black;
     color: white;
+}
+#spin{
+    display: none;
 }
 
 /* body weather------------------------------------------------ */
